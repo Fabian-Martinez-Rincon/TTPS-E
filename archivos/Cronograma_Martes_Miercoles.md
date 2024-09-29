@@ -1,6 +1,5 @@
-# TTPS-(Opción E)
 
-### Cronograma
+# Cronograma Martes y Miércoles
 
 | Fecha Martes | Martes (Responsable, Modalidad) | Fecha Miércoles | Miércoles (Responsable, Modalidad) |
 |--------------|---------------------------------|-----------------|-----------------------------------|
