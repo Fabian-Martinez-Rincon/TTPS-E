@@ -332,4 +332,337 @@ Bueno, ahi me gustaria que se involucre el paciente. Porque lo proximo que sigue
 
 No se como lo podemos pensar esto, pero a mi me gustaria que eso, lo haga directamente el paciente. En alguna aplicación web, no que tenga que llamar por telefono al paciente o que mi gente del laboratorio tenga que llamar al paciente para preguntarle que dia le queda bien. Entonces que el paciente entre de alguna manera al sistema y pueda elegir el centro de extracción, el dia y la hora, que este libre obviamente. Porfavor no le den el mismo turno a dos pacientes, porque se empieza a acumular gente y eso siempre me trae problemas. Asique eso es MUY MUY IMPORTANTE
 
-La experiencia de usuario para el paciente es muy importante
+La experiencia de usuario para el paciente es muy importante porque sino se nos van con la competencia :(
+
+Lo que si necesito que suba el paciente es:
+
+El consentimiento informado, de que quiere hacerse este estudio, porque parte del estudio lo mandamos a hacer afuera, la lectura del adn, la hacemos en Corea, necesito que el paciente me autorice a mandar, su muestra de sangre al exterior y que pase por la duana. 
+
+Si quieren yo les puedo dar un consentimiento firmado para que lo cuelguen en algun lado, de manera que el paciente lo pueda bajar, firmar, y que cuando confirma el turno, lo pueda subir.
+
+No se si necesitan saber algo mas del paciente.
+
+---
+
+A la hora de que el paciente va y hace la extracción, queda algo registrado del punto a donde se manda esa  extracción?
+
+Bueno, eeeeeeeeeeeeeeeeeeeeeeeeeeeeee. NO 
+
+No necesitamos, lo unico que de alguna forma, el estudio ese tiene que quedar marcado como que ya se tomo la muestra de ese paciente.
+
+Eso quien les parece que lo podria cargar?? (Lo ignoramos completamente y nadie respondio xd)
+
+---
+
+La idea de la aplicación es que todos los laboratorios tengan acceso al sistema? o solamente el laboratorio que se encarga de centralizar las muestras?
+
+Yo pensaba que sea solamente el laboratorio central, pero el tema es que como el laboratorio central se entera de que ya le tomaron la muestra a este paciente.
+
+No me importa registrar ningun dato de la toma de muestra, simplemente que quede marcada como tal, la muestra para que el transportista la pueda tener en su hoja de ruta. Piensenlo a ESO (pta madre we) a ver que se les ocurre, alguien lo tiene que hacer.
+
+
+---
+
+Una vez que la muestra fue marcada como `tomada` le va a parecer en la hoja de ruta al `transportista`.
+
+Bueno, esta parte ya la conte, el transportista tiene que marcar esos dos estados, que uno es `Recolectada` y el otro es `Liberada` o dejada en el laboratorio central.
+
+Lo de la hoja de ruta a mi me gustaria que sea inteligente, pero eso se lo dejo a lo chicos, cuando lo hagan con `Bryan` y `Alex` que ellos ya tiene experiencia, con otras aplicaciones del estilo. 
+
+No me importa a mi, lo unico que quiero que sea es eficiente.
+
+---
+
+El laboratorio que mensionabas en Corea, va a tener algún tipo de comunicación con la aplicación? o solamente el administrador se encarga de los envios y se desentiende?? 
+
+Es una buena pregunta, en realidad todavia ni siguiera llegamos a corea (menos mal)
+
+A tu pregunta, no vamos a tener contacto desde el sistema con el laboratorio de Corea. Nosotros vamos a recibir un mail. 
+
+Nos salteamos varios pasos pero te respondo ya que me preguntaste. `Vamos a recibir un mail con el resultado`
+
+Y el administrador del laboratorio se va a encargar de cargar el resultado en el sistema. 
+
+La recepción del resultado es por otra via, no por el sistema. Porque lo intentamos y es mucho quilombo.
+
+---
+
+Una vez que se esta en el laboratorio central, en otros estados pasaria la muestra?
+
+Aca hay una particularidad de que, los envios, los tenemos que hacer de a `100 muestras` No se mandan paquetes de a `1 muestra`, sino que tengo que `mandar de a 100 muestras`. Los Envios hacia el exterior exacta,emte.
+
+Una vez que estan en el `laboratorio central`, no puedo mandar 3 muestras solas, tengo que mandar minimo 100, maximo 100 digamos. 
+
+Si en el laboratorio central tengo 45, tengo que esperar otras 55 para poder mandar el paquete y si tengo que esperar hasta mañana lo hago. Saben pora que??? Porque si mando menos de 100 me cobran el shiping, el envio y es carisimo. 
+
+Entonces no esta calculado en los costos y entonces tenemos que esperar a tener 100 muestras.
+
+Pueden ser mas de 100 si quieren, pero minimo son 100, SI O SI.
+
+En la estrategias que usamos, es no mandar mas de 100, porque sino en el proximo Lote, tarda mas de lo que se deberia. Y si mandamos de a tandas de 100, todo es mas rapido.
+
+Por ejemplo, si yo tengo 150 y mando los 150 juntos, despues voy a tener que esperar a tener otros 150 para poder armar otro grupo/paquete. 
+
+A ese grupo de Muestras, de pedidos de estudio. Le llamamos `Sample set` (Conjunto de Muestras en ingles xd)
+
+Y eso, me gustaria que sea automatico. No quiero a alguien detras, haber cuanto falta, o a partir de estos 100 armo un `Sample Set`, sino que el sistema de manera automatica, cuando llega al nro 100 arma un `Sample Set`. No se si se puede hacer eso, pero me gustaria.
+
+---
+
+O sea que a partir de que el transportista la marca como entregada que el sistema registre un contador de muestras y como te gustaria que se notifique eso??
+
+⚠️⚠️ A Mi me gustaria que el `adminstrador del Laboratorio` tenga una vista de `Sample Sets`, de la misma manera que tiene una lista de los `Samples`,  que tenga una vista de los `Sample Sets`. Y que desde el `Sample Sets` yo pueda ver. El `Sample Set` va a tener tambien un estado particular y que yo pueda navegar en el `Sample Sets` los `Samples` que contiene. Es como que se arma y se desarma. (Podriamos armar una pagina por cada uno y que contenga una lista de estos)
+
+Despues se van a volver a desarmar porque el resultado pertenece a cada estudio particular pero los agrupo para enviarlos y despues se vuelve a desarmar.
+
+---
+
+El transportista tiene interacción con el sistema web???
+
+No necesita, si me van a dar una APP, no necesitamos
+
++ Para ver si va a tener perfil en la web porque eso quedo medio en la pregunta. 
+
+Si asumimos que vamos a tener una APP, no. Si no tuviera la APP, lo tendriamos que hacer desde el sistema pero va a quedar bastante incomodo.
+
+Importante que lo que termina haciendo desde la APP, tiene que impactar en el mismo backend que la aplicación WEB, no tienen que ser base de datos distintas ni nada de eso. Es una interfaz distinta NADA MAS.
+
+---
+
+#### Preguntas
+
+Hablamos mucho de administradores, y mezclamos el concepto de administrador de laboratorio con el de administrador general. 
+
+El administrador general que da de alta a los administradores de laboratorio y a los medicos, solo tendria que tener esa funcionalidad??
+
+Si
+
+Tendria la posibilidad de poder eliminarlos??
+
+Si
+
+Persona: Yo haria una baja logica, si queres que no se puedan dar de alta. Basicamente no quiero perder el historial, a eso voy, no hay que borrar los datos del paciente que halla cargado ese medico.
+
+Lo podria marcar como Inactivo y LISTO.
+
+Y si en un futuro quiere volver, lo activamos y listo.
+
+---
+
+Siguiendo con eso, te parece bien que el acceso sea con un nro de documento y que la primera vez que accede al ser con un nro de documento, que la cambie en el momento. 
+
+Quien? 
+
+El administrador de laboratorio, medico y paciente
+
+Si, me parece buena idea.
+
+---
+
+Solo el administrador general esta precargado en la base de datos
+
+---
+
+Siguiedo tambien con el tema del acceso, yo podria tener un paciente que es menor de edad, puede accederlo de la misma manera o tiene que tener alguna restricción??
+
+En ese caso lo suele hacer un tutor. Se registra el mail del tutor, el nro del tutor y nosotros le notificamos para que pueda acceder a la pagina y el que firma el concentimiento informado, es el tutor.
+
+NO PUEDE FIRMAR UN MENOR AL CONSENTIMIENTO INFORMADO.
+
+---
+
+Ya que tenemos el administrador general y el del laboratorio, estos dos pueden dar de baja a los pacientes??
+
+El administrador general es el que puede dar de alta, adminstrador de laboratorio y medicos. Y el administrador del laboratorio es el que hace todo este circuito del que venimos charlando.
+
+---
+
+Siguiendo con el paciente, el paciente recibio este presupuesto final, en caso de no querer porque le parece muy costoso y se va para otro lado. Se deberia informarse para nosotros finalizar el proceso??
+
+Nunca me informan..
+
+---
+
+Te parece bien ponerle un tiempo estimado al presupuesto??
+
+Me parece una buena idea, le podemos agregar una fecha de vigencia, que esa fecha de vigencia se calcula de manera automatica. En general la hacemos de 1 mes a es fecha de vigencia Y les tiro la idea y si la podemos hacer buenisimo. Si pueden pasar a un estado vencido al estudio cuando haya pasado el mes y no haya cambiado de estado el estudio, genial. 
+
+⚠️⚠️ El medico tendria que pedir otra vez el turno (wtf, para mi deberia ser el paciente) Tendria que ir otra vez al medico..
+
+---
+
+Todos los registros tienen notificación por mail??
+
+La verdad es que me da lo mismo siempre y cuando sea seguro. Si encuentran otra manera me da igual.
+
+---
+
+Si es menor de edad, que rol tendria el padre en la pagina al momento de registrarlo??
+
+El medico tratante, el que recibio al paciente en la consulta, va a estar el nene de 2 años y va a estar el papá. Entonces cuando registra al paciente, el campo que dice mail, tiene que decir mail de contacto. Si son mayores de 18 tendra que decir `mail del paciente` y si son menores tiene que decir `mail del referente`. 
+
+Era uno de los campos que les dije del paciente.
+
+---
+
+Del laboratorio a la central. El transportista todos los dias, tiene una hoja de ruta y lleva todas las muestras que se hicieron en el dia anterior.
+
+---
+
+Que sea el administrador del laboratorio el que marque se mando la muestra??
+
+Lo incomodo de ahi es que voy a tener que resolver por mail es que el centro de extracción le avise al laboratorio. Pero esta bien, sino tendriamos que crear otro ROL, que sea de centro de extracción que se encargaria, pero no la compliquemos, porque estoy muy apurado con el sistema. Asi que acepto tu opción.
+
+---
+
+Asi que el centro de extracción se va a comunicar una vez que se tenga el registro de la muestra. Y el administrador del laboratorio la va a marcar como que esta lista para enviar porque ya se tomo la muestra. 
+
+---
+
+Llendo por el lado de las muestras, habiamos dicho que cuando tenemos una sospecha puntual, que no tiene relación, si yo en la API encuentro que no esta seleccionada con ninguna de las 5, deberia avisar??
+
+Directamente no se puede crear el estudio
+
+`La patologia que usted esta sospechando no es compatible con los sintomas marcados`
+
+---
+
+Los sintomas se pueden repetir para diferentes enfermedades??
+
+Si
+
+---
+
+Tenes alguna preferencia con la paleta de colores??
+
+Si, les puedo mandar el logo si quieren de la empresa pero, los colores son violetas. En la gamma de los violetas.
+
+---
+
+No me quedo claro que funcionalidades va a tener el transportista
+
+Yo no se muy bien como trabajan ellos, lo que te puedo decir es que su responsabilidad es pasar a buscar las muestras por los centros de extracción todos los dias y llevarlas al laboratorio central. Para que en el laboratorio central se acumulen de a 100 y se puedan mandar al exterior. 
+
+De que manera les conviene a ellos trabajar, no lo se, Bryan y Alex hace como 15 años que trabajan como transportistas asi que ellos se los van a poder comentar.
+
+Ellos son los encargados de marcar la muestra como `ya la deje` en el laboratorio central para empezar, para empezar esa acumulación de a 100 muestras para mandarlas al exterior. 
+
+---
+
+Es importante mantener el seguimiento, porque la sede de extracción, avisa a la sede central. 
+
+En el momento en el que el transportista, pasa a buscar esa muestra hace falta que se siga como por elemplo, "la muestra esta en proceso de envio" 
+
+NO, NO LO NECESITO
+
+---
+
+El unico caso que puede pasar es que un estudio tenga solo una muestra, con un unico resultado.
+
+SISISISISI.
+
+---
+
+No puede haber un caso en el que el medico diga, bueno, lo validamos con dos muestras.
+
+NONO Eso no
+
+Lo que si puede pasar, es que el ADN que se pudo extraer de la muestra de sangre, sea insuficiente. Porque el transportista se quedo tomando una gaseosa en el medio del sol y la sangre se desnaturalizo y cuando llega a corea, intentan sacar ADN y no hay.
+
+En ese caso abria que tomarlo otra muestra al paciente. ⚠️⚠️stop, volver a cobrarle o como es eso?? Alta demanda le hago⚠️⚠️
+
+---
+
+Como te das cuenta??
+
+En el resultado va a estar, pero vamos a dejarlo afuera eso tambien (GRACIAS DIOS)
+
+En el caso de que eso paso, le decimos al paciente que vuelva a iniciar todo el circuito.
+
+---
+
+Corea nos informa por mail el resultado y el administrador del laboratorio se va ancargar de registrar el resultado, en nuestro sistema.
+
+---
+
+El resultado puede ser positivo, negativo o inconcluso?? 
+
+No necesariamente, pueden ser 
+
+- Baja calidad (no tengo resultado) y el laboratorio no me informa si se diagnostico o no la enfermedad, lo que me informa son las variantes geneticas que encontro, una variante genetica es como les comente. Cuando una letra en uno de los genes que analice, no coincide en esa misma posición con la letra de referencia al genoma de referencia. Imaginemos que el 90% de los humanos tenemos una letra `T` en esta posición y para este paciente en esa posición hay una `A`, a eso se le llama `Variante Genetica` es una variante respecto al genoma de referencia. Esa parte ya la tengo toda automatizada con lo cual. Porque el administrador del laboratorio va a recibir un mail por afuera, no me importa como, con las variantes geneticas. Y las variantes geneticas tienen un codigo que las identifica. Entonces lo que yo voy a informar si se realizo el estudio, es cuales son las variantes que se encontraron para ese paciente en particular, con su codigo.
+Escribir esass variantes son un lio porque son codigos muy raros. Entonces no quiero que la tenga que escribir el administrador del laboratorio. Para eso se van a servir de la API nuevamente para poder obtener todas las variantes posibles. 
+
+Algo que no me quedo claro, es que una muestra se envia al exterior, el del exterior manda el resultado y ese resultado es el que analizan los informaticos??
+
+SI
+
+Una vez que se envia al exterior, el administrador del laboratorio carga lo que serian las variantes geneticas.
+
+El paciente no entiende nada de lo que son las variantes geneticas, entonces tenemos que decidir de alguna manera si el paciente tiene o no la enfermedad.
+
+Para eso vamos a tener otro `EndPoint` que le dan la patologia y devuelve cuales son las variantes que se han identificado para esa patologia. Y ahi van a tener que machear, van a tener que buscar si hay alguna de las variantes que tenia el paciente que coincida con las variantes de la patologia.
+
+- (la otra opcion ni la nombre)
+
+--- 
+
+El paciente en su perfil, ve sus patologias??
+
+El paciente tiene que poder entrar y ver para cada estudio, un pdf con su resultado. El resultado lo tienen que poder bajar en pdf y tiene que decir BIEN GRANDE, POSITIVO, NEGATIVO Y abajo puede haber un informe que diga `se identifico la variante tal`.
+
+Importante. Si el paciente habia aceptado los hallazgos secundarios, tambien se tienen que analizar esos genes e informarlos en el resultado final. 
+
+Los hallazgos secundarios vienen del ADN en genes que ya estan predefinidos. 
+
+Hay una serie de genes que si estan mutados, son accionables aunque no tengas ningun sintoma, entonces cada vez que se hace un estudio genetico, vos le preguntas al paciente.
+
+Ademas de analizar lo que el medico le pide, quiere analizar estos otros genes para hallar estos hallazgos secundarios?
+
+Si me dice que si, tambien los voy a tener que analizar.
+
+---
+
+Vamos a tener un `EndPoint` con la lista de variantes de todos los genes para hacer los hallazgos secundarios. 
+
+Hacemos dos consultas
+
+- Una consulta para una patologia determinada
+- Una consulta para las variantes de los hallazgos secundarios.
+
+Estaria bueno que el medico pueda acceder al resultado de sus pacientes solamente.
+
+---
+
+El ministerio de salud me exige tener que pedir una autorización, para enviar muestras de sangre, para poder sacar del pais muestras de sangre. De eso no me preguntaron nada pero se los comento porque me resulta IMPORTANTE.
+
+Antes de poder mandar la muestra al exterior, tengo que conseguir esa autorización y para conseguir esa autorización. Ellos tienen una API en la que me hacen mandar un CSV con los datos de las 100 muestras (1 por `Sample set`) y me devuelve un PDF con la autorización.
+
+Que dice, el ministerio de Salud autoriza a sacar las muestras de estos pacientes y una cosa muy importante es que, desde el momento en el que el medico, da de alta al estudio, los datos del paciente tienen que quedar Anonimisados para el administrador del laboratorio, el administrador del laboratorio no puede saber que Jose Perez se hizo el estudio. 
+
+Me tienen que manejar algun codigo.
+
+El codigo que me tienen que manejar es:
+
+- un codigo auto incremental por ejemplo 1250_(las 3 primeras letras del apellido)_(las 3 primeras letras del nombre) y eso por confidencia, NO LO PUEDEN DEJAR PASAR, Si un administrador de laboratorio se enoja con nuestra empresa y publica todos los pacientes en el cual se sopecho `Fabry`, tenemos qeu cerrar el laboratorio 
+
+PONGAN MUCHO FOCO EN ESO.
+
+El unico que sabe el nombre del paciente es el medio.
+
+En el centro de extracción les alcanza con saber el Codigo y en Corea tambien. 
+
+Y los datos del paciente pueden ser vistos por el medico?? SISISI ESO ES FUNDAMENTAL
+
+---
+
+Puede pasar que cuando uno vaya a un medico, no le guste y despues vaya a otro en ese caso, como hacemos con los medicos que ya tienen acceso a ese paciente???
+
+Eso es una buena pregunta, cuando este el resultado. Eso tendrian que ver como me lo resuelven.
+
+Cuando se hace el cambio??
+
+Yo voy al medico1 por ejemplo, el medico1 ya me cargo. No me gusto ese medico, me voy con el medico2 y el medico2 me carga y automaticamente quedaz desasociado del medico1, todo el tiempo el medico2 va a tener que continuar con el proceso de la muestra supongo. (DIOS QUE QUILOMBO OJALA NO LO HAGAMOS)
+
+Esto no se podria hacer si la muestra esta en proceso, tendria que esperar a que la muestra termine por completo. Eso si TAL CUAL ()
+
+---
