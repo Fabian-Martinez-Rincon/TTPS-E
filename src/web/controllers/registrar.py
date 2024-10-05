@@ -37,7 +37,7 @@ def register():
             dni=form.dni.data,
             fecha_nacimiento=form.fecha_nacimiento.data,
             telefono=form.telefono.data,
-            id_rol=1
+            #id_rol=1
         )
         try:
             db.session.add(new_user)

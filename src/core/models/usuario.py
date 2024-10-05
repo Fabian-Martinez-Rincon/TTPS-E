@@ -11,5 +11,4 @@ class Usuario(UserMixin, db.Model):
     dni = db.Column(db.String(12), nullable=True, unique=True)
     fecha_nacimiento = db.Column(db.Date, nullable=True)
     telefono = db.Column(db.String(50), nullable=True)
-    id_rol = db.Column(db.Integer, db.ForeignKey("roles.id"), nullable=False)
-    penaltis = db.Column(db.Integer, default=0)  
+    #id_rol = db.Column(db.Integer, db.ForeignKey("roles.id"), nullable=False)

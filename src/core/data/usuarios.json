@@ -6,8 +6,7 @@
         "email": "lulilamella@gmail.com",
         "dni": "12345678",
         "fecha_nacimiento": "1990-05-24",
-        "telefono": "1122334455",
-        "id_rol": 1
+        "telefono": "1122334455"
     },
     {
         "nombre": "Austin",
@@ -16,8 +15,7 @@
         "email": "sincroniko@gmail.com",
         "dni": "87654321",
         "fecha_nacimiento": "1985-08-15",
-        "telefono": "5566778899",
-        "id_rol": 1
+        "telefono": "5566778899"
     },
     {
         "nombre": "Carlos",
@@ -26,8 +24,7 @@
         "email": "general3@gmail.com",
         "dni": "34567890",
         "fecha_nacimiento": "1992-07-10",
-        "telefono": "3344556677",
-        "id_rol": 1
+        "telefono": "3344556677"
     },
     {
         "nombre": "Luis",
@@ -36,8 +33,7 @@
         "email": "colaborador@gmail.com",
         "dni": "45678901",
         "fecha_nacimiento": "1988-09-12",
-        "telefono": "4455667788",
-        "id_rol": 2
+        "telefono": "4455667788"
     },
     {
         "nombre": "Sofia",
@@ -46,8 +42,7 @@
         "email": "colaborador2@gmail.com",
         "dni": "56789012",
         "fecha_nacimiento": "1993-10-15",
-        "telefono": "5566778899",
-        "id_rol": 2
+        "telefono": "5566778899"
     },
     {
         "nombre": "Mario y Maria",
@@ -56,7 +51,6 @@
         "email": "hopetrade08@gmail.com",
         "dni": "",
         "fecha_nacimiento": "1990-11-20",
-        "telefono": "6677889900",
-        "id_rol": 3
+        "telefono": "6677889900"
     }
 ]
