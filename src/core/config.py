@@ -4,12 +4,6 @@ from dotenv import load_dotenv
 
 
 class ConfigurationError(Exception):
-    """Error raised when a configuration error occurs.
-
-    Attributes:
-        message: A human-readable message describing the error.
-    """
-
     def __init__(self, message: str):
         super().__init__(message)
         self.message = message
@@ -60,26 +54,5 @@ class TestingConfig(Config):
     TESTING = True
 
 config = {"production": ProductionConfig,"development": DevelopmentConfig,"testing": TestingConfig}
-#This is a dictionary used to properly return the configuration selected when the app was created
 
-"""def init_app(app: Flask, env: str) -> None:
-    Initializes the application configuration.
 
-    Loads the environment variables from the .env file if the application
-    is running in development mode, otherwise loads the environment variables
-    from the database.
-    
-    if env == "development":
-        load_dotenv()
-        app.config.from_object(DevelopmentConfig)
-    elif env == "testing":
-        app.config.from_object(TestingConfig)
-    else:
-        raise ConfigurationError(f"Unknown environment '{env}'")
-    
-    Config.load_env_config()
-    app.config.from_object(Config)
-    
-    from src.core.models.database import init_app as init_db_app
-    init_db_app(app)
- """
