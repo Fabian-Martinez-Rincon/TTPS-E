@@ -1,0 +1,28 @@
+{% extends "_layouts/app.html" %}{% import "_macros/oferta.html" as Oferta %}
+{% block head %}
+    <title>Intercambios Pendientes</title>
+{% endblock %}
+{% block content %}
+<main class="flex flex-col px-4 py-12 text-center bg-very-light-yellow-green sm:px-6 lg:px-8">
+    <h1 class="mb-4 text-3xl font-extrabold text-center md:text-4xl lg:text-5xl text-green-shade">
+        Intercambios Pendientes del Dia
+    </h1>
+    <section>
+        {% if ofertas %}        
+                <ul>
+                    {% for oferta in ofertas %}                               
+                        <div class="items-center justify-center text-center">         
+                            {{ Oferta.OfertaDetalle(
+                                oferta.oferta_id,
+                                oferta.ofrecido, oferta.solicitado, 
+                                oferta.fechaIntercambio, oferta.horaIntercambio,                                
+                                oferta.filial,oferta.estado, oferta.descripcion,oferta.ofrecido_email,oferta.   solicitado_email) }}                                                                        
+                        </div>                    
+                    {% endfor %}                               
+                </ul>                
+        {% else %}    
+            <p class="mb-4 text-2xl font-extrabold text-green-shade">No hay intercambios pendientes para el día de hoy.</p>
+        {% endif%}
+    </section>    
+</main>
+{% endblock %}
